@@ -1,5 +1,5 @@
 PODS:
-  - ClickLab (1.0.2)
+  - ClickLab (1.0.3)
 
 DEPENDENCIES:
   - ClickLab (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ClickLab: 886df6b8022044affbe035bc22427756b7c2252d
+  ClickLab: 0daeb34bcde312c07e1c3cd35f890f885d86b723
 
 PODFILE CHECKSUM: 03773ae2b160e11780ef4ada27a3db29f0a363ef
 
