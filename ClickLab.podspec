@@ -10,7 +10,7 @@ DESC
 s.homepage         = 'http://www.clicklab.com/'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'ClickLab' => 'clicklab.tracking@gmail.com' }
-s.source           = { :git => 'https://github.com/PhinxLab/ClickLab-iOS-SDK.git', :tag => s.version.to_s }
+s.source           = { :git => 'https://github.com/clicklab-dev/ClickLab-iOS-SDK.git', :tag => s.version.to_s }
 
 s.platform              = :ios, '7.1'
 s.ios.deployment_target = '7.1'
