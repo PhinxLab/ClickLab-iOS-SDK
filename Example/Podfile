@@ -1,0 +1,12 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'ClickLab_Example' do
+  pod 'ClickLab', :path => '../'
+
+  target 'ClickLab_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
