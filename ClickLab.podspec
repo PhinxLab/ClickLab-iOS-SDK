@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
-s.name             = 'ClickLab'
-s.version          = '1.0.3'
-s.summary          = 'ClickLab client iOS SDK.'
+s.name             = 'ClickLAB'
+s.version          = '1.0.4'
+s.summary          = 'ClickLAB Trackeame iOS SDK.'
 
 s.description      = <<-DESC
-iOS SDK to track events using ClickLab.
+iOS SDK to track events using Trackeame.
 DESC
 
-s.homepage         = 'http://www.clicklab.com/'
+s.homepage         = 'https://github.com/clicklab-dev/ClickLab-iOS-SDK'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
-s.author           = { 'ClickLab' => 'clicklab.tracking@gmail.com' }
+s.author           = { 'ClickLAB' => 'clicklab.tracking@gmail.com' }
 s.source           = { :git => 'https://github.com/clicklab-dev/ClickLab-iOS-SDK.git', :tag => s.version.to_s }
 
 s.platform              = :ios, '7.1'
