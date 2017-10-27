@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-s.name             = 'ClickLAB'
+s.name             = 'ClickLab'
 s.version          = '1.0.4'
 s.summary          = 'ClickLAB Trackeame iOS SDK.'
 
