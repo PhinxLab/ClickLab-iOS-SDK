@@ -28,6 +28,11 @@
 @property (nonatomic, strong, readonly) NSString *apiKey;
 
 /**
+ Your application name.
+ */
+@property (nonatomic, strong, readonly) NSString *appName;
+
+/**
  The country of the current user.
  */
 @property (nonatomic, strong) NSString *country;

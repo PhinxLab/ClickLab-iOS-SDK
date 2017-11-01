@@ -15,6 +15,11 @@
 @property (nonatomic, copy, readonly) NSString * _Nonnull apiKey;
 
 /**
+ Your application name.
+ */
+@property (nonatomic, copy, readonly) NSString * _Nonnull appName;
+
+/**
  The country of the current user.
  */
 @property (nonatomic) NSString * _Nonnull country;
@@ -30,6 +35,6 @@
  @param key Your project's key from ClickLab.
  @return Configuration with default settings and the given client key.
  */
-+ (_Nonnull instancetype)configurationWithKey:(NSString * _Nonnull)key;
++ (_Nonnull instancetype)configurationWithKey:(NSString * _Nonnull)key andAppName:(NSString * _Nonnull)appName;
 
 @end

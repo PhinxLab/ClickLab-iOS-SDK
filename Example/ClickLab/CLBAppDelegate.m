@@ -9,11 +9,12 @@
 #import <ClickLab/ClickLab.h>
 
 #define API_KEY @"client_api_key"
+#define APP_NAME @"your_app_name"
 
 @implementation CLBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    CLBAppConfiguration *config = [CLBAppConfiguration configurationWithKey:API_KEY];
+    CLBAppConfiguration *config = [CLBAppConfiguration configurationWithKey:API_KEY andAppName:APP_NAME];
     [CLBApp showDebugLog:YES];
     [CLBApp setupWithConfiguration:config];
     
