@@ -54,6 +54,11 @@
         }
         
         [self showAlert];
+    } else if (indexPath.section == 3) {
+        if (indexPath.row == 0) {
+            // Change api key
+            [self changeApiKey];
+        }
     }
 }
 
@@ -89,6 +94,16 @@
     conversion.cart = @[product];
     
     [[CLBApp shared] logConversion:conversion];
+}
+
+
+#pragma mark - Change api key
+
+- (void)changeApiKey {
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"clickLabApiKey"];
+    
+    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"resetApiKeyNavigation"];
+    [[UIApplication sharedApplication].delegate.window setRootViewController:vc];
 }
 
 

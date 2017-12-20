@@ -8,15 +8,18 @@
 #import "CLBAppDelegate.h"
 #import <ClickLab/ClickLab.h>
 
-#define API_KEY @"client_api_key"
 #define APP_NAME @"your_app_name"
 
 @implementation CLBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    CLBAppConfiguration *config = [CLBAppConfiguration configurationWithKey:API_KEY andAppName:APP_NAME];
-    [CLBApp showDebugLog:YES];
-    [CLBApp setupWithConfiguration:config];
+    
+    // Check if exists previous api key
+    NSString *apiKey = [[NSUserDefaults standardUserDefaults] objectForKey:@"clickLabApiKey"];
+    if (apiKey && ![apiKey isEqualToString:@""]) {
+        [self startTrackingWithApiKey:apiKey];
+        [self goToMainScreen];
+    }
     
     return YES;
 }
@@ -41,6 +44,18 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)startTrackingWithApiKey:(NSString *)apiKey {
+    CLBAppConfiguration *config = [CLBAppConfiguration configurationWithKey:apiKey andAppName:APP_NAME];
+    [CLBApp showDebugLog:YES];
+    [CLBApp setupWithConfiguration:config];
+}
+
+- (void)goToMainScreen {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"mainNavigation"];
+    [[UIApplication sharedApplication].delegate.window setRootViewController:vc];
 }
 
 @end

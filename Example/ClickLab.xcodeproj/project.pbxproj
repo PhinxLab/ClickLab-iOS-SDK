@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064429521FEADA6C00ED28E1 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064429511FEADA6C00ED28E1 /* SetupViewController.m */; };
 		06E590481F757C36008DE953 /* ConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E590391F757C34008DE953 /* ConfigurationViewController.m */; };
 		06E590491F757C36008DE953 /* ParamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E5903A1F757C34008DE953 /* ParamCell.m */; };
 		06E5904A1F757C36008DE953 /* OpenAppEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E5903C1F757C34008DE953 /* OpenAppEventViewController.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		064429501FEADA6C00ED28E1 /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
+		064429511FEADA6C00ED28E1 /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
 		06E590381F757C34008DE953 /* ConversionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConversionViewController.h; sourceTree = "<group>"; };
 		06E590391F757C34008DE953 /* ConfigurationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigurationViewController.m; sourceTree = "<group>"; };
 		06E5903A1F757C34008DE953 /* ParamCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParamCell.m; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				06E5903E1F757C35008DE953 /* MainViewController.m */,
 				06E590441F757C35008DE953 /* OpenAppEventViewController.h */,
 				06E5903C1F757C34008DE953 /* OpenAppEventViewController.m */,
+				064429501FEADA6C00ED28E1 /* SetupViewController.h */,
+				064429511FEADA6C00ED28E1 /* SetupViewController.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -449,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064429521FEADA6C00ED28E1 /* SetupViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CLBAppDelegate.m in Sources */,
 				06E5904A1F757C36008DE953 /* OpenAppEventViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
